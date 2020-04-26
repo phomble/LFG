@@ -1,0 +1,243 @@
+{
+	"id": "com.gmail.cse.ari007.d3lfg",
+	"version": "1.0.0",
+	"name": "Liquid Fill Gauge",
+	"description": "Liquid Fill Gauge",
+	"newInstancePrefix": "PwC_LFG",
+	"icon": "http://localhost:8080/D3Webcomponent/icon.png",
+	"vendor": "PricewaterhouseCoopes Pvt. Ltd.",
+	"eula": "The MIT License (MIT) \n Copyright (C) PricewaterhouseCoopers Pvt. Ltd. All rights reserved. \n Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+	"license": "The MIT License (MIT)",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-gmail-cse-ari007-d3lfg",
+			"url": "http://localhost:8080/D3Webcomponent/d3lfg.js",
+			"integrity": "sha256-71BC5zqaee2NkEvkMQlwRf9wPoJ/WifM/IjIWcOWyjI=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-gmail-cse-ari007-d3lfg-sps",
+			"url": "http://localhost:8080/D3Webcomponent/d3lfg_sps.js",
+			"integrity": "sha256-bBaBkgZ5pMJfHkH8raLgLnJ85nf91421oMwWS1y4ZT8=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-gmail-cse-ari007-d3lfg-bps",
+			"url": "http://localhost:8080/D3Webcomponent/d3lfg_bps.js",
+			"integrity": "sha256-qwa+nqntya8DwIiy1bcdd/hq0SaMgYE9IM2U+HuHMhQ=",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
+		},
+		"waveCount": {
+			"type": "number",
+			"description": "The number of full waves per width of the wave circle.",
+			"default": "3"
+		},
+		"value": {
+			"type": "number",
+			"description": "Value",
+			"default": "70.45"
+		},
+		"maxValue": {
+			"type": "number",
+			"description": "Maximum Value of gauge",
+			"default": "100"
+		},
+		"displayPercent": {
+			"type": "boolean",
+			"description": "Display as percentage",
+			"default": "true"
+		},
+		"waveAnimate": {
+			"type": "boolean",
+			"description": "Animate wave",
+			"default": "true"
+		},
+		"waveColor": {
+			"type": "string",
+			"description": "Wave color",
+			"default": "#178BCA"
+		},
+		"waveTextColor": {
+			"type": "string",
+			"description": "Text color inside wave",
+			"default": "#A4DBf8"
+		},
+		"textColor": {
+			"type": "string",
+			"description": "Text color outside wave",
+			"default": "#045681"
+		},
+		"circleColor": {
+			"type": "string",
+			"description": "Color of outer circle",
+			"default": "#178BCA"
+		},
+		"circleThickness": {
+			"type": "number",
+			"description": "The outer circle thickness as a percentage of it's radius",
+			"default": "0.05"
+		},
+		"waveHeight": {
+			"type": "number",
+			"description": "The wave height as a percentage of the radius of the wave circle",
+			"default": "0.05"
+		},
+		"width": {
+			"type": "integer",
+			"default": 150
+		},
+		"height": {
+			"type": "integer",
+			"default": 150
+		}
+	},
+	"methods": {	
+		"setCircleColor": {
+			"description": "Sets the circle color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new circle color"
+				}
+			],
+			"body": "this.circleColor = newColor;"
+		},
+		"setCircleThickness": {
+			"description": "Sets the circle thickness as a percentage of it's radius.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new circle thickness (valid range: 0.05 - 0.4)"
+				}
+			],
+			"body": "if(newValue >=0.05 && newValue <=0.4){this.circleThickness = newValue;}"
+		},
+		"setWaveHeight": {
+			"description": "Sets the wave height as a percentage of the radius of the wave circle.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new wave height (valid range: 0 - 0.2)"
+				}
+			],
+			"body": "if(newValue >=0.00 && newValue <=0.20){this.waveHeight = newValue;}"
+		},
+		"setWaveColor": {
+			"description": "Sets the wave color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new wave color"
+				}
+			],
+			"body": "this.waveColor = newColor;"
+		},
+		"setWaveTextColor": {
+			"description": "Sets the text color inside wave.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new text color inside wave"
+				}
+			],
+			"body": "this.waveTextColor = newColor;"
+		},
+		"setTextColor": {
+			"description": "Sets the text color outside wave.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new text color outside wave"
+				}
+			],
+			"body": "this.textColor = newColor;"
+		},
+		"displayAsPercentage": {
+			"description": "Display the value as percentage.",
+			"parameters": [
+				{
+					"name": "flag",
+					"type": "boolean",
+					"description": "Show value as percentage"
+				}
+			],
+			"body": "this.displayPercent = flag;"
+		},
+		"animateWave": {
+			"description": "Animate the wave.",
+			"parameters": [
+				{
+					"name": "flag",
+					"type": "boolean",
+					"description": "Animate the wave"
+				}
+			],
+			"body": "this.waveAnimate = flag;"
+		},
+		
+		"setData": {
+			"description": "Sets the value.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new value"
+				}
+			],
+			"body": "this.value = newValue;"
+		},
+		"setMaxValue": {
+			"description": "Sets the maximum value for the gauge.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new max value"
+				}
+			],
+			"body": "this.maxValue = newValue;"
+		},
+		"setWaveCount": {
+			"description": "The number of full waves per width of the wave circle.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new wave count (valid range: 1-5)"
+				}
+			],
+			"body": "if(newValue >=1 && newValue <=5){this.waveCount = newValue;}"
+		},
+		"getData": {
+			"returnType": "number",
+			"description": "Returns the value.",
+			"body": "return this.value;"
+		},
+		"isDisplayedAsPercentage": {
+			"returnType": "boolean",
+			"description": "Returns whether the value is shown as percentage.",
+			"body": "return this.displayPercent;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the gauge."
+		}
+	}
+}
