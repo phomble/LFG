@@ -4,7 +4,7 @@
 	"name": "Liquid Fill Gauge",
 	"description": "Liquid Fill Gauge",
 	"newInstancePrefix": "PwC_LFG",
-	"icon": "http://localhost:8080/D3Webcomponent/icon.png",
+	"icon": "https://phomble.github.io/LFG/D3Webcomponent/icon.png",
 	"vendor": "PricewaterhouseCoopes Pvt. Ltd.",
 	"eula": "The MIT License (MIT) \n Copyright (C) PricewaterhouseCoopers Pvt. Ltd. All rights reserved. \n Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
 	"license": "The MIT License (MIT)",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-gmail-cse-ari007-d3lfg",
-			"url": "http://localhost:8080/D3Webcomponent/d3lfg.js",
+			"url": "https://phomble.github.io/LFG/D3Webcomponent/d3lfg.js",
 			"integrity": "sha256-71BC5zqaee2NkEvkMQlwRf9wPoJ/WifM/IjIWcOWyjI=",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-gmail-cse-ari007-d3lfg-sps",
-			"url": "http://localhost:8080/D3Webcomponent/d3lfg_sps.js",
+			"url": "https://phomble.github.io/LFG/D3Webcomponent/d3lfg_sps.js",
 			"integrity": "sha256-bBaBkgZ5pMJfHkH8raLgLnJ85nf91421oMwWS1y4ZT8=",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-gmail-cse-ari007-d3lfg-bps",
-			"url": "http://localhost:8080/D3Webcomponent/d3lfg_bps.js",
+			"url": "https://phomble.github.io/LFG//D3Webcomponent/d3lfg_bps.js",
 			"integrity": "sha256-qwa+nqntya8DwIiy1bcdd/hq0SaMgYE9IM2U+HuHMhQ=",
 			"ignoreIntegrity": true
 		}
