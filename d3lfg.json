@@ -14,23 +14,8 @@
 			"tag": "com-gmail-cse-ari007-d3lfg",
 			"url": "https://phomble.github.io/LFG/d3lfg.js",
 			"integrity": "",
-			"ignoreIntegrity": true
-		},
-		{
-			"kind": "styling",
-			"tag": "com-gmail-cse-ari007-d3lfg-sps",
-			"url": "https://phomble.github.io/LFG/d3lfg_sps.js",
-			"integrity": "",
-			"ignoreIntegrity": true
-		},
-		{
-			"kind": "builder",
-			"tag": "com-gmail-cse-ari007-d3lfg-bps",
-			"url": "https://phomble.github.io/LFG//D3Webcomponent/d3lfg_bps.js",
-			"integrity": "",
-			"ignoreIntegrity": true
-		}
-	],
+			"ignoreIntegrity": true}
+		],
 	"properties": {
 		"color": {
 			"type": "string",
