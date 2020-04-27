@@ -20,7 +20,7 @@
 		"color": {
 			"type": "string",
 			"description": "Background color",
-			"default": "red"
+			"default": "#045681"
 		},
 		"waveCount": {
 			"type": "number",
